@@ -1,0 +1,1 @@
+ACTION=="add|change", ENV{ID_SERIAL}=="LaCie_Rugged_Mini_STJJ5000400_XXXXXXXX", ATTR{queue/rotational}=="1", RUN+="/usr/bin/hdparm -S 36 /dev/%k"
